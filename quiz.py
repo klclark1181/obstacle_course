@@ -31,7 +31,7 @@ def ClueQuestion(num, cluequestion, clueanswer, clue, quizquestion, quizanswer,
 				return
 			else:
 				# print out error message
-				wait = 180
+				wait = 120
 				before = time.time()
 				tk.messagebox.showinfo('You are wrong!', 
 					'Wrong answer: %d second penalty\n\n'
@@ -44,19 +44,132 @@ window = tk.Tk()
 window.wm_title('Coding Obstacle Course')
 T = tk.Text(window, height=40, width=80)
 T.pack()
-greeting = 'Welcome to the Dave Clark Memorial Network and Coding Obstacle Course'
+greeting = 'Welcome to the Clark Network and Coding Obstacle Course'
 T.insert(tk.END, '%s\n\n' % (greeting))
 tk.messagebox.showinfo('Welcome', greeting)
 
-ClueQuestion(1,
-	'Do you stink?', 'yes', 'The ip command is very helpful',
-	'What is your IP address?', '192.168.1.1',
-	'Stupid! You\'re so STUPID!', 'UHF')
-ClueQuestion(2,
-	'What is the answer to life, the universe and everything?', '42',
-	'The ip command is very very helpful',
-	'What is your MAC address?', 'FF:FF:FF:FF:FF:FF',
-	'Hello. My name is Indigo Montoya. You killed my father. Prepare to die.',
-	'The Princess Bride')
+ClueQuestion(
+    num = 1,
+	cluequestion = 'What is the answer to life, the universe and everything?', 
+    clueanswer = '42',
+	clue = 'The ip command is very very helpful',
+	quizquestion = 'What is your MAC address?', 
+    quizanswer = 'FF:FF:FF:FF:FF:FF',
+	movie_quote = 'Hello. My name is Indigo Montoya. You killed my father. Prepare to die.',
+	movie = 'The Princess Bride'
+)
+
+ClueQuestion(
+    num = 2,
+	cluequestion = '', 
+    clueanswer = '',
+	clue = '',
+	quizquestion = '', 
+    quizanswer = '',
+	movie_quote = '',
+	movie = ''
+)
+
+ClueQuestion(
+    num = 3,
+	cluequestion = '', 
+    clueanswer = '',
+	clue = '',
+	quizquestion = '', 
+    quizanswer = '',
+	movie_quote = '',
+	movie = ''
+)
+ClueQuestion(
+    num = 4,
+	cluequestion = '', 
+    clueanswer = '',
+	clue = '',
+	quizquestion = '', 
+    quizanswer = '',
+	movie_quote = '',
+	movie = ''
+)
+ClueQuestion(
+    num = 5,
+	cluequestion = '', 
+    clueanswer = '',
+	clue = '',
+	quizquestion = '', 
+    quizanswer = '',
+	movie_quote = '',
+	movie = ''
+)
+ClueQuestion(
+    num = 6,
+	cluequestion = '', 
+    clueanswer = '',
+	clue = '',
+	quizquestion = '', 
+    quizanswer = '',
+	movie_quote = '',
+	movie = ''
+)
+ClueQuestion(
+    num = 7,
+	cluequestion = '', 
+    clueanswer = '',
+	clue = '',
+	quizquestion = '', 
+    quizanswer = '',
+	movie_quote = '',
+	movie = ''
+)
+ClueQuestion(
+    num = 8,
+	cluequestion = '', 
+    clueanswer = '',
+	clue = '',
+	quizquestion = '', 
+    quizanswer = '',
+	movie_quote = '',
+	movie = ''
+)
+ClueQuestion(
+    num = 9,
+	cluequestion = '', 
+    clueanswer = '',
+	clue = '',
+	quizquestion = '', 
+    quizanswer = '',
+	movie_quote = '',
+	movie = ''
+)
+ClueQuestion(
+    num = 10,
+	cluequestion = '', 
+    clueanswer = '',
+	clue = '',
+	quizquestion = '', 
+    quizanswer = '',
+	movie_quote = '',
+	movie = ''
+)
+ClueQuestion(
+    num = 11,
+	cluequestion = '', 
+    clueanswer = '',
+	clue = '',
+	quizquestion = '', 
+    quizanswer = '',
+	movie_quote = '',
+	movie = ''
+)
+
+ClueQuestion(
+    num = 12,
+	cluequestion = '', 
+    clueanswer = '',
+	clue = '',
+	quizquestion = '', 
+    quizanswer = '',
+	movie_quote = '',
+	movie = ''
+)
 
 window.mainloop()
