@@ -9,7 +9,7 @@ from ping3 import ping
 # What should be here?
 base = '127.0.0'
 first_subnet_addr = 1
-last_subnet_addr = 2
+last_subnet_addr = 1
 
 for i in range(first_subnet_addr, last_subnet_addr + 1):
     addr = base + str(i)

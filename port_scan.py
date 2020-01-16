@@ -6,6 +6,11 @@
 
 import socket
 
+# Are these right? You decide
+ip_addr = '127.0.0.1'
+begin_port = 1
+end_port = 1
+
 def check_port(address, port):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         try:
@@ -14,11 +19,6 @@ def check_port(address, port):
         except:
             # print(port)
             return False
-
-# Are these right? You decide
-ip_addr = '127.0.0.1'
-begin_port = 1
-end_port = 700
 
 for i in range(begin_port, end_port + 1):
     if check_port(ip_addr, i) == True:
